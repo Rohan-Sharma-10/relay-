@@ -3,10 +3,8 @@ const mongoose=require("mongoose");
 const cors=require("cors");
 const dotenv=require("dotenv");
 
-
-const authRoutes=require("./routes/userRoutes");
+const authRoutes=require("./routes/userRoutes.js");
 const channelRoutes=require("./routes/channelRoutes");
-
 
 dotenv.config();
 const app=express();
