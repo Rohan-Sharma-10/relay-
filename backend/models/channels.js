@@ -5,6 +5,7 @@ const channelSchema=new mongoose.Schema({
     type:String, 
     required:true,
     },
+    code: {type: String, unique: true},
     participants:[{
         type:mongoose.Schema.Types.ObjectId, ref:'User',
     }]
